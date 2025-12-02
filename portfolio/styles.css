@@ -1,0 +1,20 @@
+:root {
+    --bg-color:#FFFFFF;
+    --headers-color:#0E1C36;
+    --text-color:#333333;
+    --acent-color:#AFCBFF;
+    --second-acent-color:#D7F9FF;
+    --second-bg-color:#F9FBF2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
