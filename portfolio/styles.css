@@ -19,6 +19,7 @@ body{
     color: var(--text-color);
     padding:2rem;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section{
@@ -64,6 +65,12 @@ header{
     padding:10px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    h1{
+        a{
+            text-decoration:none;
+            color:var(--headers-color);
+        }
+    }
     .container{
         justify-content:space-between;
         .nav-links{
@@ -232,6 +239,23 @@ footer{
     p{
         color:var(--text-color);
     }
+}
+
+/*ABOUT ME PAGE*/
+#skills-aboutme{
+    margin-top:40px;
+    background-color:var(--second-bg-color);
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        .skills-grid{
+            padding:2rem;
+            width:100%;
+            .skill-card{
+                background-color:var(--headers-color);
+                color:var(--acent-color)
+            }
+        }
 }
 
 /*RESPONSIVE*/
