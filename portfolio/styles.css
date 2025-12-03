@@ -182,7 +182,7 @@ header{
         .project-info{
             padding:15px;
             h3{
-                color:var(--headers-color);
+                color:var(--second-acent-color);
                 margin-bottom:10px;
             }
             p{
@@ -269,5 +269,107 @@ footer{
     }
     #about .about-text{
         width:100%;
+    }
+        #infoproject{
+        flex-direction:column;
+    }
+    .tech-used-grid{
+        justify-content:center;
+    }
+}
+
+/*INFO PROJECT PAGE*/
+#infoproject{
+    margin-top: 40px;
+    display:flex;
+    gap:4rem;
+    .project-text{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        gap:20px;
+        h2{
+            margin-bottom:20px;
+        }
+        p{
+            font-size:1.1rem;
+            line-height:1.6;
+        }
+        .tech-used-grid{
+            display: flex;
+            gap: 20px;
+            img{
+                position: relative;
+                width:50px;
+                height:50px;
+                object-fit:contain;
+                margin-bottom:10px;
+            }
+            img:hover {
+                transform: scale(1.1) translate(0, -5px);
+                transition: transform 0.3s ease;
+            }
+}
+    }
+    .project-img{
+        flex:1;
+        img{
+            width:100%;
+            border-radius:10px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.4);
+        }
+    }
+}
+
+#descriptionproject{
+    background-color:var(--second-bg-color);
+    padding:30px;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    margin-top:40px;
+    p{
+        font-size:1.1rem;
+        line-height:1.6;
+    }
+    .cta{
+        .btn{
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 10px;
+            background-color: var(--acent-color);
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            &:hover{
+                background-color: var(--headers-color);
+            }
+        }
+        img{
+            margin:0;
+            width:40px;
+            box-shadow: none;
+        }
+    }
+    img{
+        width:100%;
+        margin-top:20px;
+        border-radius:10px;
+        box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    }
+}
+#galleryproject{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+    .gallery-grid{
+        width: 70%;
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+        gap:20px;
     }
 }
