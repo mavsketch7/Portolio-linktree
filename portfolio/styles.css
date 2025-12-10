@@ -147,6 +147,16 @@ header{
             font-size:1.1rem;
             color:var(--headers-color);
         }
+        details{
+
+            p{
+                color:var(--text-color);
+                background-color:var(--bg-color);
+                margin-top:10px;
+                padding:10px;
+                border-radius:5px;
+                }
+        }
     }
 }
 
