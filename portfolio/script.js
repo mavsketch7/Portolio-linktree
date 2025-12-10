@@ -1,5 +1,5 @@
 const cursor = document.querySelector('.cursor');
-const links = document.querySelectorAll('a');
+const links = document.querySelectorAll('a, button');
 
 // Seguir al mouse
 document.addEventListener('mousemove', e => {
@@ -34,3 +34,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Acordeon seccion habilidades
+
+    document.querySelectorAll('.skill-card').forEach(button=>{
+        button.addEventListener('click',()=>{
+            const nextElement = button.nextElementSibling;
+            nextElement.classList.toggle('active');
+
+        })
+    })

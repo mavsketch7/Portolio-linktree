@@ -37,6 +37,7 @@ body{
         justify-content:space-around;
         align-items:center;
         padding:20px 0;
+    gap:20px;
 }
     
 /*FONTS*/
@@ -133,6 +134,7 @@ header{
     margin-top:20px;
     .skill-card{
         background-color:var(--second-bg-color);
+        width: 100%;
         padding:15px;
         border-radius:8px;
         text-align:center;
@@ -426,16 +428,38 @@ html {
 
 /*Acordeon styles*/
 .content{
-    display:none;
-    margin-top:10px;
-    padding:10px;
-    border-radius:5px;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 5px;
     background-color: #e5e5f7;
-    background-position: center;
-    height: 100px;
-    border:solid 1px #ccc;
+    transition: max-height 0.3s ease, padding 0.3s ease, border 0.3s ease;
+    padding: 0 15px; /* padding cerrado para animar */
+    border: none;
+    img{
+        margin-top:10px;
+        width: 100%;
+        border-radius:5px;
+    }
 }
-.content .active{
-    display:block;
-    height: auto;
-    transition: height 0.3s ease;}
+.content.active{
+    max-height: 1000px;
+    padding:15px;
+    border:solid 1px #ccc;
+    img{
+        margin-top:10px;
+        width: 100%;
+        border-radius:5px;
+    }
+}
+
+.icon{
+    float:right;
+    
+    background-color:var(--headers-color);
+    color:#fff;
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    text-align:center;
+}
